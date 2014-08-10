@@ -15,8 +15,12 @@ def is_divisible_by(number,divisor)
 end
 
 def fizzbuzz(number)
-	return "FizzBuzz" if is_divisible_by_fifteen?(number)
-	return "Fizz" if is_divisible_by_three?(number)
-	return "Buzz" if is_divisible_by_five?(number)
-	number
+	return puts "FizzBuzz" if is_divisible_by_fifteen?(number)
+	return puts "Fizz" if is_divisible_by_three?(number)
+	return puts "Buzz" if is_divisible_by_five?(number)
+	puts number
 end
+
+numbers = (1..100).to_a
+
+numbers.each {|x| fizzbuzz(x)}
